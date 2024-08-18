@@ -1,0 +1,123 @@
+.creative_projects {
+  height: 120vh;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+.creative_projects > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  position: relative;
+  overflow: hidden;
+}
+.txt_container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start !important;
+  padding: 10rem 0 0 0;
+}
+.creative_txt {
+  font-size: 8rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  background-image: linear-gradient(
+    to right,
+    rgb(119, 119, 119),
+    #d8d8d8,
+    #fff
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  white-space: nowrap;
+}
+.creative_txt,
+.frontend_txt,
+.designer_txt {
+  font-size: 10rem;
+  margin: 0;
+  padding: 0;
+  line-height: 9.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+.frontend_txt {
+  font-style: italic;
+}
+.designer_txt {
+  margin-right: -26rem;
+  background-image: linear-gradient(to left, rgb(119, 119, 119), #d8d8d8, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.paragraph_div {
+  padding: 1rem 0;
+  width: 400px !important;
+  line-break: anywhere;
+  color: #fff;
+  position: absolute;
+  bottom: 12rem;
+  right: 8rem;
+}
+.paragraph_txt {
+  font-size: 14px;
+  color: #353535;
+  font-weight: 500;
+}
+@media (max-width: 1050px) {
+  .creative_txt,
+  .frontend_txt,
+  .designer_txt {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  .paragraph_div {
+    bottom: 15rem;
+    right: 4rem;
+  }
+  .creative_projects {
+    height: 100vh;
+  }
+}
+@media (max-width: 740px) {
+  .creative_txt,
+  .frontend_txt,
+  .designer_txt {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .paragraph_div {
+    bottom: 22rem;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .creative_projects {
+    height: 80vh;
+  }
+}
+@media (max-width: 555px) {
+  .creative_txt,
+  .frontend_txt,
+  .designer_txt {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .paragraph_div {
+    bottom: 22rem;
+    left: 50%;
+    width: 100% !important;
+    padding: 1rem 2rem;
+    transform: translate(-50%);
+  }
+  .creative_projects {
+    height: 80vh;
+  }
+}

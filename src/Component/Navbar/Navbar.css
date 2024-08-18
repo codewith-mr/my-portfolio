@@ -1,0 +1,128 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.5px;
+}
+.navbar {
+  padding: 1rem 5rem;
+  height: 12vh !important;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+/* =================== */
+
+.right_section span,
+.main_right_section span {
+  position: relative;
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  color: rgb(14, 14, 14);
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.right_section span::before,
+.right_section span::after,
+.main_right_section span::before,
+.main_right_section span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: rgb(14, 14, 14);
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+.right_section span::before,
+.main_right_section span::before {
+  transition: transform 0.3s ease;
+}
+.right_section span:hover::before,
+.main_right_section span:hover:before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.right_section span::after,
+.main_right_section span::after {
+  transition: transform 0.3s ease;
+  transform-origin: bottom left;
+}
+.right_section span:hover::after,
+.main_right_section span:hover::after {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+/* =============== */
+
+.right_section {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.main_right_section {
+  display: flex;
+  gap: 2.5rem;
+}
+.btn {
+  cursor: pointer;
+}
+.btn svg {
+  cursor: pointer;
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+.menu-btn {
+  display: none;
+}
+.close-btn {
+  z-index: 100 !important;
+}
+
+@media (max-width: 1024px) {
+  .menu-btn {
+    display: block;
+  }
+  .main_right_section {
+    display: none !important;
+  }
+  .right_section {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 99;
+    height: 100vh;
+    width: 50vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateX(100vw);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  .right_section.show {
+    display: flex;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@media (min-width: 992px) {
+  .right_section {
+    display: none;
+  }
+}
+@media (max-width: 546px) {
+  .navbar {
+    padding: 1rem 2rem !important;
+  }
+}
