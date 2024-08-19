@@ -279,4 +279,11 @@
   .box_1 {
     width: 100%;
   }
+  .opentowork {
+    gap: 1.3rem;
+    padding: 0.2rem 1.5rem;
+  }
+  .opentowork > p {
+    font-size: 6vw;
+  }
 }
