@@ -89,3 +89,9 @@ main {
   top: 0;
   inset: 0;
 }
+
+@media (max-width: 546px) {
+  .cursor {
+    display: none;
+  }
+}

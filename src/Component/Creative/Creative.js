@@ -7,35 +7,61 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Creative = () => {
   useEffect(() => {
-    gsap.fromTo(
-      ".creative_txt",
-      { x: -1260 },
-      {
-        x: -100,
-        duration: 1,
-        scrollTrigger: {
-          trigger: ".creative_txt",
-          start: "top 69%",
-          end: "top 10%",
-          scrub: true,
-        },
-      }
-    );
+    const applyAnimations = () => {
+      if (window.innerWidth > 950) {
+        // Apply GSAP animations when width is above 950px
+        gsap.fromTo(
+          ".creative_txt",
+          { x: -1260 },
+          {
+            x: -100,
+            duration: 1,
+            scrollTrigger: {
+              trigger: ".creative_txt",
+              start: "top 69%",
+              end: "top 10%",
+              scrub: true,
+            },
+          }
+        );
 
-    gsap.fromTo(
-      ".designer_txt",
-      { x: 1260 },
-      {
-        x: -100,
-        duration: 1,
-        scrollTrigger: {
-          trigger: ".designer_txt",
-          start: "top 100%",
-          end: "top 42%",
-          scrub: true,
-        },
+        gsap.fromTo(
+          ".designer_txt",
+          { x: 1260 },
+          {
+            x: -100,
+            duration: 1,
+            scrollTrigger: {
+              trigger: ".designer_txt",
+              start: "top 100%",
+              end: "top 42%",
+              scrub: true,
+            },
+          }
+        );
+      } else if (window.innerWidth > 555) {
+        // Set position to x: -100 if width is between 555px and 950px
+        gsap.set(".creative_txt, .designer_txt", { x: -100 });
+      } else {
+        gsap.set(".creative_txt", { x: -50 });
+        gsap.set(".designer_txt", { x: -150 });
       }
-    );
+    };
+
+    applyAnimations();
+
+    // Reapply animations on window resize
+    const handleResize = () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill()); // Clear existing animations
+      applyAnimations();
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill()); // Cleanup on unmount
+    };
   }, []);
 
   return (

@@ -78,6 +78,10 @@
   }
 }
 @media (max-width: 436px) {
+  .Resume_projects {
+    height: 100vh;
+  }
+
   .resumeImg_1,
   .resumeImg_2 {
     height: 320px !important;
