@@ -19,11 +19,13 @@ const Contact = () => {
             <div className="icons">
               {social_icons.map((item, index) => (
                 <GsapMagnetic key={index}>
-                  <img
-                    className={item.className}
-                    src={item.social_Image}
-                    alt="icon"
-                  />
+                  <a href={item.link}>
+                    <img
+                      className="magnetic-btn"
+                      src={item.social_Image}
+                      alt="icon"
+                    />
+                  </a>
                 </GsapMagnetic>
               ))}
             </div>
@@ -36,11 +38,13 @@ const Contact = () => {
             <div className="icons">
               {social_icons_2.map((item, index) => (
                 <GsapMagnetic key={index}>
-                  <img
-                    className={item.className}
-                    src={item.social_Image}
-                    alt="icon"
-                  />
+                  <a href={item.link}>
+                    <img
+                      className="magnetic-btn"
+                      src={item.social_Image}
+                      alt="icon"
+                    />
+                  </a>
                 </GsapMagnetic>
               ))}
             </div>

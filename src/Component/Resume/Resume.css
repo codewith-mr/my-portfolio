@@ -38,10 +38,10 @@
 .resumeImg_2 {
   height: 100%;
   border-radius: 8px;
-  cursor: pointer;
 }
 .resumeImg_2 {
   border: 5px solid rgba(228, 228, 228, 0.123);
+  cursor: pointer;
 }
 .light {
   height: 350px;

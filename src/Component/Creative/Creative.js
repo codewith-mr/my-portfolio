@@ -9,7 +9,6 @@ const Creative = () => {
   useEffect(() => {
     const applyAnimations = () => {
       if (window.innerWidth > 950) {
-        // Apply GSAP animations when width is above 950px
         gsap.fromTo(
           ".creative_txt",
           { x: -1260 },

@@ -15,12 +15,12 @@ import instagram_icon from "../../../Images/instagram.svg";
 import twitterx_icon from "../../../Images/twitterx.svg";
 import linkedin_icon from "../../../Images/linkedin.svg";
 import github_icon from "../../../Images/github.svg";
-import pinterest_icon from "../../../Images/pinterest.svg";
+import youtube_icon from "../../../Images/youtube.svg";
 
 import fiverr_icon from "../../../Images/fiverr.svg";
 import upwork_icon from "../../../Images/upwork.svg";
 import guru_icon from "../../../Images/guru.png";
-import toptal_icon from "../../../Images/toptal.png";
+import simplyHired_icon from "../../../Images/simplyHired.png";
 import peopleperhour_icon from "../../../Images/peopleperhour.png";
 import freelancer_icon from "../../../Images/freelancer.png";
 
@@ -56,18 +56,58 @@ export const boxes = [
 ];
 
 export const social_icons = [
-  { social_Image: facebook_icon, className: "magnetic-btn" },
-  { social_Image: instagram_icon, className: "magnetic-btn" },
-  { social_Image: twitterx_icon, className: "magnetic-btn" },
-  { social_Image: linkedin_icon, className: "magnetic-btn" },
-  { social_Image: github_icon, className: "magnetic-btn" },
-  { social_Image: pinterest_icon, className: "magnetic-btn" },
+  {
+    social_Image: youtube_icon,
+    link: "https://www.youtube.com/@code_with_mr",
+  },
+  {
+    social_Image: facebook_icon,
+    link: "https://www.facebook.com/groups/8008055665927361",
+  },
+  {
+    social_Image: instagram_icon,
+    link: "https://www.instagram.com/codewithmr/",
+  },
+  {
+    social_Image: twitterx_icon,
+    link: "https://x.com/codewithmr24",
+  },
+  {
+    social_Image: linkedin_icon,
+    link: "https://www.linkedin.com/in/abdul-rehman-5247672b6/",
+  },
+  {
+    social_Image: github_icon,
+    link: "https://github.com/codewith-mr",
+  },
 ];
 export const social_icons_2 = [
-  { social_Image: fiverr_icon, className: "magnetic-btn" },
-  { social_Image: upwork_icon, className: "magnetic-btn" },
-  { social_Image: guru_icon, className: "magnetic-btn" },
-  { social_Image: toptal_icon, className: "magnetic-btn" },
-  { social_Image: peopleperhour_icon, className: "magnetic-btn" },
-  { social_Image: freelancer_icon, className: "magnetic-btn" },
+  {
+    social_Image: fiverr_icon,
+
+    link: "https://www.fiverr.com/mr1yt5?up_rollout=true",
+  },
+  {
+    social_Image: upwork_icon,
+
+    link: "https://www.upwork.com/freelancers/~01c75c01540c3bb0fc",
+  },
+  {
+    social_Image: guru_icon,
+
+    link: "https://www.guru.com/pro/profilebuild.aspx?tab=2",
+  },
+  {
+    social_Image: simplyHired_icon,
+
+    link: "https://www.simplyhired.com/profile",
+  },
+  {
+    social_Image: peopleperhour_icon,
+    link: "https://www.peopleperhour.com/freelancer/abdul-rehman-front-end-web-developer-zzxxznzv",
+  },
+  {
+    social_Image: freelancer_icon,
+    link: "https://www.freelancer.com/u/AbdulRehman329",
+  },
 ];
