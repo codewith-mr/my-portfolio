@@ -5,6 +5,8 @@ import Home from "./Screen/Home";
 import LoaderScreen from "./Component/Loader/LoaderScreen";
 
 const App = () => {
+  console.log(67);
+
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const timer = setTimeout(() => {
