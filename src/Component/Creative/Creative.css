@@ -72,6 +72,11 @@
   color: #353535;
   font-weight: 500;
 }
+@media (max-width: 1535px) {
+  .creative_projects {
+    height: 140vh;
+  }
+}
 @media (max-width: 1050px) {
   .creative_txt,
   .frontend_txt,
