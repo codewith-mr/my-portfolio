@@ -185,7 +185,7 @@
     flex-direction: column;
   }
   .contact_projects {
-    height: 130vh;
+    height: auto;
   }
   .box_2 {
     height: auto;
@@ -201,9 +201,6 @@
 }
 
 @media (max-width: 1090px) {
-  .contact_projects {
-    height: auto;
-  }
   .box_1 {
     height: 350px;
     width: 800px;
