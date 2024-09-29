@@ -202,7 +202,7 @@
 
 @media (max-width: 1090px) {
   .contact_projects {
-    height: 120vh;
+    height: auto;
   }
   .box_1 {
     height: 350px;
@@ -226,9 +226,6 @@
   }
 }
 @media (max-width: 830px) {
-  .contact_projects {
-    height: auto;
-  }
   .box_1 {
     height: auto;
     width: auto;
