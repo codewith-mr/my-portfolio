@@ -1,7 +1,6 @@
 .Resume_projects {
-  height: 150vh;
+  height: 170vh;
   width: 100%;
-  padding: 2rem;
   background-color: rgb(0, 0, 0);
 }
 .Resume_projects > h1 {
