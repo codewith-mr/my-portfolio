@@ -37,9 +37,16 @@ export const menu_btn2 = [
 ];
 
 export const projects_box = [
-  { Image: ProjectImg_1, id: "heart" },
-  { Image: ProjectImg_1, id: "heart" },
-  { Image: ProjectImg_1, id: "heart" },
+  {
+    Image: ProjectImg_1,
+    id: "heart",
+    href: "https://binance-dashboard-fmqa-git-main-codewithmrs-projects.vercel.app",
+  },
+  {
+    Image: ProjectImg_1,
+    id: "heart",
+    href: "https://amazon-git-main-codewithmrs-projects.vercel.app",
+  },
 ];
 
 export const boxes = [

@@ -51,7 +51,7 @@ const Resume = () => {
             <img className="resumeImg_1" src={resume_bgImg} alt="resume" />
           </div>
           <div className="resumeImg_wrapper_2">
-            <a href=" https://drive.google.com/file/d/1vHMv3oPL8FGS0qK03SD0FIcXyJ6QKWFP/view?usp=sharing">
+            <a href=" https://drive.google.com/file/d/1LNXgwslZWd7PvVEYYWZ8XR2PtrFmMZAX/view?usp=sharing">
               <img className="resumeImg_2" src={resume_img} alt="resume" />
             </a>
           </div>

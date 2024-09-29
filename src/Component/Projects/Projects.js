@@ -1,5 +1,10 @@
 import React from "react";
 import "../../Component/Projects/Projects.css";
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 import { projects_box } from "../Utils/Mock/MockData";
 
 const Projects = () => {
@@ -13,7 +18,7 @@ const Projects = () => {
               <img src={item.Image} alt={item.id} />
               <a
                 className="btn-2"
-                href="http://192.168.10.7:3000 "
+                href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
               >
