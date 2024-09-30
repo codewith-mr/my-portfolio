@@ -1,5 +1,6 @@
-import ProjectImg_1 from "../../../Images/binance-dashboard_1.jpg";
-import ProjectImg_2 from "../../../Images/curd.jpg";
+import ProjectImg_1 from "../../../Images/binance-dashboard_1.jpg?version=1";
+import crud_img from "../../../Images/binance-dashboard.jpg?version=1";
+
 import box1_img from "../../../Images/html.png";
 import box2_img from "../../../Images/bootstrap.png";
 import box3_img from "../../../Images/gsap.png";
@@ -44,7 +45,7 @@ export const projects_box = [
     href: "https://binance-dashboard-fmqa-git-main-codewithmrs-projects.vercel.app",
   },
   {
-    Image: ProjectImg_2,
+    Image: crud_img,
     id: "heart",
     href: "https://crud-git-main-codewithmrs-projects.vercel.app",
   },
