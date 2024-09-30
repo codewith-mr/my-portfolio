@@ -45,7 +45,7 @@ export const projects_box = [
   {
     Image: ProjectImg_1,
     id: "heart",
-    href: "https://amazon-git-main-codewithmrs-projects.vercel.app",
+    href: "https://crud-git-main-codewithmrs-projects.vercel.app",
   },
 ];
 
