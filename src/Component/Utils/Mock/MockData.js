@@ -1,5 +1,5 @@
-import ProjectImg_1 from "../../../Images/binance-dashboard_1.jpg?version=1";
-import crud_img from "../../../Images/binance-dashboard.jpg?version=1";
+import ProjectImg_1 from "../../../Images/binance-dashboard.jpg";
+import crud_img from "../../../Images/crud.jpg";
 
 import box1_img from "../../../Images/html.png";
 import box2_img from "../../../Images/bootstrap.png";
